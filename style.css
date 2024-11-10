@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(#F8F8F2, #282A36);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-vscode-window {
+    background-color: #282A36;
+
+    width: 1142px;
+    height: 847px;
+
+    max-width: calc(100% - 150px);
+    max-height: calc(100vh - 150px);
+
+    border-radius: 32px;
+    border: solid #44475A 2px;
+}
+
+.window-header {
+    background-color: #282A36;
+
+    width: auto;
+    height: 54px;
+
+    border-radius: 32px 32px 0px 0px;
+}
+
+#vscode-icon {
+    float: left;
+    margin: 13px 0px 0px 21px;
+}
+
+#window-buttons {
+    float: right;
+    margin: 13px 21px 0px 0px;
+}
