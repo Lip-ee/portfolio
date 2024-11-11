@@ -6,6 +6,8 @@ body {
 
     margin: 0;
     overflow: hidden;
+
+    font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -28,6 +30,9 @@ main {
     border: solid #44475A 2px;
 }
 
+
+
+/* HEADER WINDOW */
 .window-header {
     background-color: #282A36;
 
@@ -45,4 +50,42 @@ main {
 #window-buttons {
     float: right;
     margin: 13px 21px 0px 0px;
+}
+
+
+
+/* LEFT FILES SPACE */
+.files-space {
+    background-color: #282A36;
+
+    position: fixed;
+
+    width: 236px;
+    height: 793px;
+
+    max-width: calc(100% - 300px);
+    max-height: calc(100% - 204px);
+    /* 204px = window header height (54px) + main vscode window max-height (150px) */
+
+    border-radius: 0px 0px 0px 32px;
+}
+
+.left-files-list ul {
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+.left-files-list ul li {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.left-files-list ul li a {
+    text-decoration: none;
+    color: #F8F8F2;
+}
+
+.left-list-text-option {
+    font-size: 24px;
+    margin-left: 8px;
 }
