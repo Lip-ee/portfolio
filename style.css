@@ -28,6 +28,8 @@ main {
 
     border-radius: 32px;
     border: solid #44475A 2px;
+
+    position: flex;
 }
 
 
@@ -59,6 +61,7 @@ main {
     background-color: #282A36;
 
     position: fixed;
+    float: left;
 
     width: 236px;
     height: 793px;
@@ -76,8 +79,15 @@ main {
 }
 
 .left-files-list ul li {
+    padding: 5px;
+    border-radius: 3px;
+
     list-style-type: none;
     margin-bottom: 25px;
+}
+
+.left-files-list ul li:hover {
+    background-color: #44475A;
 }
 
 .left-files-list ul li a {
@@ -88,4 +98,35 @@ main {
 .left-files-list ul li a span {
     font-size: 24px;
     margin-left: 8px;
+}
+
+/* MAIN CONTENT SPACE */
+.main-content-space {
+    display: block;
+    height: 100%;
+}
+
+/* FIXED OPENED FILES BAR */
+.fixed-opened-files-bar {
+    background-color: #6272A4;
+    float: right;
+
+    width: 906px;
+    height: 39px;
+    max-width: calc(100% - 236px);
+}
+
+/* FIXED CONTENT AREA */
+.fixed-content-area {
+    background-color: #44475A;
+
+    float: right;
+
+    width: 906px;
+    height: 754px;
+
+    max-width: calc(100% - 236px);
+    max-height: calc(100% - 92px);
+
+    border-radius: 0px 0px 28px 0px;
 }
